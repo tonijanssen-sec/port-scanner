@@ -5,7 +5,6 @@ portliste = (22, 23, 25, 53, 67, 68, 80, 110, 123, 143, 443, 445 ) #ein tuple, u
 
 for port in portliste:
     fStringOffen = f"Portnummer {port} ist offen." #fString = formattierter String
-    fStringGeschlossen = f"Portnummer {port} ist geschlossen."
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(1.5) #socket timeout nach 1.5 sek
     ergebnis = s.connect_ex((ziel, port)) # 0 = offen, sonst Fehlercode (errno) = zu/gefilter
