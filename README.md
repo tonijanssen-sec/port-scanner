@@ -41,29 +41,29 @@ if __name__ == "__main__": #prüft: wird das skript direkt aufgerufen? Wenn ja r
 #### Benutzungsbeispiel 1
 **Hilfe und alle Optionen anzeigen**
 
-​```bash
+```bash
 python port_scanner.py -h
-​```
+```
 
 #### Benutzungsbeispiel 2
 **Mehrere Ziele scannen**
-​```bash
+```bash
 python port_scanner.py <Ziel-IP> [weitere IPs] [--ports ...] [--timeout ...]
-​```
+```
 
 #### Benutzungsbeispiel 3
 **Eigene Ports und kurzer LAN-Timeout**
 
-​```bash
+```bash
 python port_scanner.py <Ziel-IP> --ports 22 23 25 80 443 --timeout 0.2
-​```
+```
 
 #### Benutzungsbeispiel 4
 **Zwei Ziele mit höherem Timeout**
 
-​```bash
+```bash
 python port_scanner.py <Ziel-IP> <Ziel-IP> --timeout 1.5
-​```
+```
 
 ### Was ich mit diesem Projekt gelernt habe
 
